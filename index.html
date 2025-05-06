@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Upgr8 - Coming Soon</title>
+  <title>upgr8 – Coming Soon</title>
   <style>
     /* Self-hosted Montserrat using TTF */
     @font-face {
@@ -32,20 +32,24 @@
       background-color: #ffffff;
       color: #111111;
       font-family: 'Montserrat', sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       text-align: center;
-      height: 100vh;
       padding: 2rem;
     }
 
     .container {
       max-width: 600px;
+      margin: 0 auto;
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
     img.logo {
-      max-width: 300px;
+      width: 100%;
+      max-width: 500px;
+      height: auto;
       margin-bottom: 2rem;
     }
 
@@ -56,18 +60,54 @@
       font-weight: 700;
     }
 
-    p {
+    p.subtitle {
       font-size: 1.25rem;
       color: #555555;
       font-weight: 400;
+      margin-bottom: 3rem;
+    }
+
+    .impressum {
+      text-align: left;
+      font-size: 0.7rem;
+      color: #666;
+      line-height: 1.4;
+      max-width: 800px;
+      margin: 2rem auto 0 auto;
+      opacity: 0.85;
+    }
+
+    .impressum h2 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .impressum a {
+      color: #555;
+      text-decoration: none;
+    }
+
+    .impressum a:hover {
+      text-decoration: underline;
     }
 
     @media (max-width: 600px) {
       h1 {
         font-size: 2.25rem;
       }
-      p {
+
+      p.subtitle {
         font-size: 1rem;
+      }
+
+      .impressum {
+        font-size: 0.65rem;
+        padding: 1rem;
+      }
+
+      .impressum h2 {
+        font-size: 0.8rem;
       }
     }
   </style>
@@ -75,7 +115,25 @@
 <body>
   <div class="container">
     <img src="logo.png" alt="upgr8 logo" class="logo" />
-    <p>coming soon</p>
+    <h1>upgr8</h1>
+    <p class="subtitle">coming soon</p>
+  </div>
+
+  <div class="impressum">
+    <h2>Impressum</h2>
+    <p><strong>Firmenname:</strong> upgr8 GmbH</p>
+    <p><strong>Rechtsform:</strong> Gesellschaft mit beschränkter Haftung (GmbH)</p>
+    <p><strong>Sitz der Gesellschaft:</strong><br>Aschergasse 25/2<br>1130 Wien</p>
+    <p><strong>Kontakt:</strong><br>E-Mail: <a href="mailto:office@upgr8.org">office@upgr8.org</a></p>
+    <p><strong>Firmenbuchnummer:</strong> FN 650326 m</p>
+    <p><strong>Firmenbuchgericht:</strong> Handelsgericht Wien</p>
+    <p><strong>UID-Nummer:</strong> ATU81915215</p>
+    <p><strong>Geschäftsführer:</strong> Armin Blassnig</p>
+    <p><strong>Unternehmensgegenstand:</strong> Unternehmensberatung</p>
+    <p>Mitglied der Wirtschaftskammer Wien, Fachgruppe Unternehmensberatung, Buchhaltung und Informationstechnologie</p>
+    <p><strong>Anwendbare Rechtsvorschriften:</strong> <a href="https://www.ris.bka.gv.at" target="_blank">Gewerbeordnung (www.ris.bka.gv.at)</a></p>
+    <p><strong>Aufsichtsbehörde:</strong> Magistratisches Bezirksamt für den 13. Bezirk (Hietzing)</p>
+    <p><strong>Grundlegende Richtung der Webseite:</strong><br>Diese Webseite dient der Information über Dienstleistungen und Produkte der upgr8 GmbH sowie über aktuelle Themen aus dem Bereich der Unternehmensberatung</p>
   </div>
 </body>
 </html>
