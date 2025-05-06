@@ -1,78 +1,151 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Impressum – upgr8 GmbH</title>
-  <style>
-    @font-face {
-      font-family: 'Montserrat';
-      src: url('fonts/Montserrat-Regular.ttf') format('truetype');
-      font-weight: 400;
-      font-style: normal;
-    }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Impressum – upgr8 GmbH</title>
+    <style>
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('fonts/Montserrat-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+        }
 
-    @font-face {
-      font-family: 'Montserrat';
-      src: url('fonts/Montserrat-Bold.ttf') format('truetype');
-      font-weight: 700;
-      font-style: normal;
-    }
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('fonts/Montserrat-Bold.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+        }
 
-    body {
-      font-family: 'Montserrat', sans-serif;
-      background-color: #E7E6E6;
-      color: #111111;
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-      font-size: 0.85rem;
-      line-height: 1.5;
-    }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-    h1 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-    }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #E7E6E6;
+            color: #111111;
+            text-align: left;
+            padding-top: 80px;
+        }
 
-    a {
-      color: #333;
-      text-decoration: none;
-    }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #445469;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
 
-    
+        nav .logo {
+            height: 40px;
+        }
 
-    a:hover {
-      text-decoration: underline;
-    }
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-left: 1.5rem;
+        }
 
-    .back-link {
-      display: inline-block;
-      margin-top: 2rem;
-      font-size: 0.8rem;
-      color: #777;
-    }
-  </style>
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2rem;
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            align-items: left;
+        }
+
+        img.main-logo {
+            width: 100%;
+            max-width: 300px;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        p.subtitle {
+            font-size: 1.25rem;
+            color: #555;
+        }
+
+        .container p {
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.25rem;
+            }
+
+            p.subtitle {
+                font-size: 1rem;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-  <h1>Impressum</h1>
+    <nav>
+        <a href="index.html"><img src="light_logo.png" alt="upgr8 logo" class="logo" /></a>
+        <div>
+            <a href="impressum.html">Impressum</a>
+        </div>
+    </nav>
 
-  <p><strong>Firmenname:</strong> upgr8 GmbH</p>
-  <p><strong>Rechtsform:</strong> Gesellschaft mit beschränkter Haftung (GmbH)</p>
-  <p><strong>Sitz der Gesellschaft:</strong><br>Aschergasse 25/2<br>1130 Wien</p>
-  <p><strong>Kontakt:</strong><br>E-Mail: <a href="mailto:office@upgr8.org">office@upgr8.org</a></p>
-  <p><strong>Firmenbuchnummer:</strong> FN 650326 m</p>
-  <p><strong>Firmenbuchgericht:</strong> Handelsgericht Wien</p>
-  <p><strong>UID-Nummer:</strong> ATU81915215</p>
-  <p><strong>Geschäftsführer:</strong> Armin Blassnig</p>
-  <p><strong>Unternehmensgegenstand:</strong> Unternehmensberatung</p>
-  <p>Mitglied der Wirtschaftskammer Wien, Fachgruppe Unternehmensberatung, Buchhaltung und Informationstechnologie</p>
-  <p><strong>Anwendbare Rechtsvorschriften:</strong> <a href="https://www.ris.bka.gv.at" target="_blank">Gewerbeordnung (www.ris.bka.gv.at)</a></p>
-  <p><strong>Aufsichtsbehörde:</strong> Magistratisches Bezirksamt für den 13. Bezirk (Hietzing)</p>
-  <p><strong>Grundlegende Richtung der Webseite:</strong><br>Diese Webseite dient der Information über Dienstleistungen und Produkte der upgr8 GmbH sowie über aktuelle Themen aus dem Bereich der Unternehmensberatung</p>
+    <div class="container">
+    <h1>Impressum</h1>
 
-  <a href="index.html" class="back-link">&larr; Zurück zur Startseite</a>
+    <p><strong>Firmenname:</strong> upgr8 GmbH</p>
+    <p><strong>Rechtsform:</strong> Gesellschaft mit beschränkter Haftung (GmbH)</p>
+    <p><strong>Sitz der Gesellschaft:</strong><br>Aschergasse 25/2<br>1130 Wien</p>
+    <p><strong>Kontakt:</strong><br>E-Mail: <a href="mailto:office@upgr8.org">office@upgr8.org</a></p>
+    <p><strong>Firmenbuchnummer:</strong> FN 650326 m</p>
+    <p><strong>Firmenbuchgericht:</strong> Handelsgericht Wien</p>
+    <p><strong>UID-Nummer:</strong> ATU81915215</p>
+    <p><strong>Geschäftsführer:</strong> Armin Blassnig</p>
+    <p><strong>Unternehmensgegenstand:</strong> Unternehmensberatung</p>
+    <p>Mitglied der Wirtschaftskammer Wien, Fachgruppe Unternehmensberatung, Buchhaltung und Informationstechnologie</p>
+    <p><strong>Anwendbare Rechtsvorschriften:</strong> <a href="https://www.ris.bka.gv.at"
+            target="_blank">Gewerbeordnung (www.ris.bka.gv.at)</a></p>
+    <p><strong>Aufsichtsbehörde:</strong> Magistratisches Bezirksamt für den 13. Bezirk (Hietzing)</p>
+    <p><strong>Grundlegende Richtung der Webseite:</strong><br>Diese Webseite dient der Information über
+        Dienstleistungen und Produkte der upgr8 GmbH sowie über aktuelle Themen aus dem Bereich der Unternehmensberatung
+    </p>
 
+    <a href="index.html" class="back-link">&larr; Zurück zur Startseite</a>
+    </div>
 </body>
+
 </html>
